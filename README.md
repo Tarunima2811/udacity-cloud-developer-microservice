@@ -153,8 +153,9 @@ Rolling Upgrade:
 
 ### 5. Setup Travis CI:
 
+[![Build Status](https://travis-ci.com/Tarunima2811/udacity-cloud-developer-microservice.svg?branch=master)](https://travis-ci.com/Tarunima2811/udacity-cloud-developer-microservice)
 
-
+![Alt text](/images/travis-ci.PNG "Travis CI")
 
 ## Application:
 
