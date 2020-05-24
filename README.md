@@ -1,4 +1,4 @@
-# nd990-c3-microservices-v1
+# Udagram - Microservices
 This repository is associated with Cloud Developer ND - Course 03 - Monolith to Microservices. There are 6 lessons in this course. There is separate directory for each lesson.
 
 # About the Project - Udagram Image Filtering Microservice
@@ -91,18 +91,21 @@ docker images
 
 docker run --rm --publish 8080:8080 -v $HOME/.aws:/root/.aws --env POSTGRESS_HOST=$POSTGRESS_HOST --env POSTGRESS_USERNAME=$POSTGRESS_USERNAME --env POSTGRESS_PASSWORD=$POSTGRESS_PASSWORD --env POSTGRESS_DB=$POSTGRESS_DB --env AWS_REGION=$AWS_REGION --env AWS_PROFILE=$AWS_PROFILE --env AWS_BUCKET=$AWS_BUCKET --env JWT_SECRET=$JWT_SECRET --name feed tarunima2811/udacity-restapi-feed
 
-docker push tarunima2811/udacity-restapi-feed
-
-docker-compose -f docker-compose-build.yaml build
-
-docker-compose up
 ```
 ![Alt text](/images/docker-images.PNG "docker images")
 
 ![Alt text](/images/docker-run-local.PNG "docker run local")
 
+```$xslt
+docker push tarunima2811/udacity-restapi-feed
+```
+
 ![Alt text](/images/dockerhub.PNG "docker hub")
 
+```$xslt
+docker-compose -f docker-compose-build.yaml build
+docker-compose up
+```
 ![Alt text](/images/docker-compose-up.PNG "docker compose up")
 
 ### 4. Setup Kubernetes Cluser and Node Groups:
@@ -150,7 +153,9 @@ Rolling Upgrade:
 
 ### 5. Setup Travis CI:
 
+[![Build Status](https://travis-ci.com/Tarunima2811/udacity-cloud-developer-microservice.svg?branch=master)](https://travis-ci.com/Tarunima2811/udacity-cloud-developer-microservice)
 
+![Alt text](/images/travis-ci.PNG "Travis CI")
 
 ## Application:
 
