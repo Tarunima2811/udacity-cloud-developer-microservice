@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_MEDIA_BUCKET: udagram-tinny-bucket
+  AWS_PROFILE: default
+  AWS_REGION: ap-south-1
+  JWT_SECRET: tinnybinny
+  POSTGRESS_DATABASE: udagramtinnydev
+  POSTGRESS_HOST: udagramtinnydev.cz0muk1xwun8.ap-south-1.rds.amazonaws.com
+  URL: http://localhost:8100  
+metadata:
+  name: env-config
