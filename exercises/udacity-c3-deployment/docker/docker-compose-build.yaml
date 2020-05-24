@@ -1,0 +1,19 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: tarunima2811/reverseproxy
+  backend_user:
+    build:
+      context: ../../udacity-c3-restapi-user
+    image: tarunima2811/udacity-restapi-user
+  backend_feed:
+    build:
+      context: ../../udacity-c3-restapi-feed
+    image: tarunima2811/udacity-restapi-feed
+  frontend:
+    build:
+      context: ../../udacity-c3-frontend
+    image: tarunima2811/udacity-frontend:local
+
